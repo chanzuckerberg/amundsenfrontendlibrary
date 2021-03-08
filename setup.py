@@ -53,7 +53,7 @@ setup(
     setup_requires=['cython >= 0.29'],
     install_requires=requirements,
     extras_require={
-        'oidc': ['flaskoidc==0.1.1'],
+        'oidc': ['flaskoidc==0.2.1'],
         'pyarrow': ['pyarrow==3.0.0'],
     },
     python_requires=">=3.6",
