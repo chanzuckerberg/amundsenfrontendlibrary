@@ -1,8 +1,14 @@
 // This file should be used to add new config variables or overwrite defaults from config-default.ts
 
-import { AppConfigCustom } from './config-types';
+import { AppConfigCustom, BadgeStyle } from './config-types';
 
 const configCustom: AppConfigCustom = {
+  badges: {
+    'pii': {
+        style: BadgeStyle.INFO,
+        displayName: 'PII',
+    },
+  },
   browse: {
     curatedTags: [],
     showAllTags: true,
