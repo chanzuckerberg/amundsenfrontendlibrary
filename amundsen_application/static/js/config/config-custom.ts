@@ -8,6 +8,10 @@ const configCustom: AppConfigCustom = {
         style: BadgeStyle.INFO,
         displayName: 'PII',
     },
+    'no_pii': {
+      style: BadgeStyle.INFO,
+      displayName: 'NO_PII',
+    },
   },
   browse: {
     curatedTags: [],
