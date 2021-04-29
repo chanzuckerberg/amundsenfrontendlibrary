@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: flaskoidc
+    versions:
+    - 0.2.1
+- package-ecosystem: npm
+  directory: "/amundsen_application/static"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: elliptic
+    versions:
+    - 6.5.4
+  - dependency-name: urijs
+    versions:
+    - 1.19.6
+  - dependency-name: analytics
+    versions:
+    - 0.7.3
